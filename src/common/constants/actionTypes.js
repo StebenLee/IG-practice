@@ -1,0 +1,17 @@
+export const AUTH_START    = "AUTH_START";
+export const AUTH_COMPLETE = "AUTH_COMPLETE";
+export const AUTH_ERROR    = "AUTH_ERROR";
+export const START_LOGOUT    = "START_LOGOUT";
+export const CHECK_AUTH    = "CHECK_AUTH";
+export const SET_USER    = "SET_USER";
+export const SHOW_SPINNER    = "SHOW_SPINNER";
+export const HIDE_SPINNER    = "HIDE_SPINNER";
+export const SET_UI    = "SET_UI";
+export const GET_POSTS = 'GET_POSTS';
+export const SET_POST = 'SET_POST';
+export const ADD_POST = 'ADD_POST';
+export const UPDATE_POST = 'UPDATE_POST';
+export const DELETE_POST = 'DELETE_POST';
+export const CREATE_COMMENT = 'CREATE_COMMENT';
+export const DELETE_COMMENT = 'DELETE_COMMENT';
+export const CHANGE_TEXT = "CHANGE_TEXT";

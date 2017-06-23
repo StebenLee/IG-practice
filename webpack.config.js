@@ -2,7 +2,7 @@ import webpack from 'webpack';
 
 module.exports = {
   entry: [
-    './client/index.js', 
+    './src/client/index.js',
   ],
   output: {
     path: `${__dirname}/dist`,
@@ -18,7 +18,7 @@ module.exports = {
         exclude: /bundle\.js$/,
       },
     ],
-    plugins: [ //setting up hot module replacement
+    plugins: [
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.HotModuleReplacementPlugin()
     ],    
