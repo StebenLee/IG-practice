@@ -5,7 +5,7 @@ import LoginBoxContainer from '../../containers/LoginBoxContainer';
 const LoginPage = ({
   spinnerVisible,
 }) => (
-  <div>
+  <div style = {{backgroundColor:"#ffffff"}}>
     <Row className="show-grid">
       <Col xs={6} xsOffset={3}>
         <LoginBoxContainer />

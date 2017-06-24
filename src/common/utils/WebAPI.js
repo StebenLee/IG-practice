@@ -79,6 +79,25 @@ export default {
     .catch((error) => {
     });
   },
+  getPost: (dispatch, postId) => {
+    axios.get('/api/posts/' + postId + '?token=' + getCookie('token'))
+    .then((response) => {
+      if(response.data.success === false) {
+        dispatch(hideSpinner());  
+        dispatch(setPost({ key: 'postId', value: '' }));
+        dispatch(setUi({ key: 'isEdit', value: false }));
+        alert('發生錯誤，請再試一次！');
+        browserHistory.push('/');       
+      } else {
+        dispatch(hideSpinner());  
+        window.location.reload();        
+        browserHistory.push('/posts'); 
+      }
+    })
+    .catch(function (error) {
+    });    
+  }, 
+
   addPost: (dispatch, name, description, imagePath) => {
     const id = uuid.v4();
     axios.post('/api/posts?token=' + getCookie('token'), {
@@ -139,5 +158,6 @@ export default {
     })
     .catch(function (error) {
     });    
-  } 
+  },
+
 };

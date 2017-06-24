@@ -8,6 +8,7 @@ export const SHOW_SPINNER    = "SHOW_SPINNER";
 export const HIDE_SPINNER    = "HIDE_SPINNER";
 export const SET_UI    = "SET_UI";
 export const GET_POSTS = 'GET_POSTS';
+export const GET_POST = "GET_POST";
 export const SET_POST = 'SET_POST';
 export const ADD_POST = 'ADD_POST';
 export const UPDATE_POST = 'UPDATE_POST';

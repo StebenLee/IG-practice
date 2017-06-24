@@ -8,7 +8,7 @@ import {
 
 export default connect(
   (state) => ({
-  	comment: state.getIn(['comment', 'comment'])
+  	comment: state.getIn(['comment', 'comment']),
   }),
   (dispatch) => ({
   	onChangeText: (event) => (
@@ -17,6 +17,7 @@ export default connect(
   	onCreateComment: () => {
   		dispatch(createComment());
   		dispatch(changeText({ text: ''}));
+     // dispatch(changeText(dispatch, postId));
   	} 
   })
 )(Comment); 

@@ -3,7 +3,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 import ShareBoxContainer from '../../containers/ShareBoxContainer';
 
 const SharePage = () => (
-  <div>
+  <div style={{backgroundColor:"#ffffff"}}>
     <Row className="show-grid">
       <Col xs={6} xsOffset={3}>
         <ShareBoxContainer />

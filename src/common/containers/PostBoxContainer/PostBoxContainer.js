@@ -4,6 +4,7 @@ import PostBox from '../../components/PostBox';
 import { browserHistory } from 'react-router';
 
 import {
+  getPost,
   deletePost,
   setPost,
   setUi
@@ -18,6 +19,14 @@ export default connect(
     onDeletePost: (postId) => () => (
       dispatch(deletePost(dispatch, postId))
     ),
+    onGetPost: (posts) => (postId) => () => {
+      const postIndex = posts.findIndex((_post) => (_post.get('_id') === postId));
+      const post = postIndex !== -1 ? posts.get(postIndex) : undefined;
+      dispatch(setPost({ keyPath: ['post'], value: post }));
+      dispatch(setPost({ keyPath: ['post', 'id'], value: postId }));
+      dispatch(setUi({ key: 'isEdit', value: true }));
+      browserHistory.push('/posts?postId' + postId); 
+    },
     onUpadatePost: (posts) => (postId) => () => {
       const postIndex = posts.findIndex((_post) => (_post.get('_id') === postId));
       const post = postIndex !== -1 ? posts.get(postIndex) : undefined;

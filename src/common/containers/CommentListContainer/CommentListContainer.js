@@ -6,7 +6,7 @@ import {
 
 export default connect(
   (state) => ({
-  	comments: state.getIn(['comment', 'comments'])
+  	comments: state.getIn(['comment', 'comments']),
   }),
   (dispatch) => ({
   	onDeleteComment: (index) => () => (

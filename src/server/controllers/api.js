@@ -44,18 +44,18 @@ apiRoutes.post('/login', function(req, res) {
 apiRoutes.get('/setup', (req, res) => {
   // create a sample user
   const sampleUser = new User({ 
-    username: 'mark2', 
-    email: 'mark2@demo.com', 
-    password: '1234567',
+    username: 'steben', 
+    email: 'hihihi', 
+    password: '123456',
     admin: true 
   });
 
   const samplePost = new Post({
     id: '110ec58a-a0f2-4ac4-8393-c866d813b8d1',
-    name: '番茄炒蛋', 
-    description: '番茄炒蛋，一道非常經典的家常菜料理。雖然看似普通，但每個家庭都有屬於自己家裡的不同味道', 
-    imagePath: 'https://c1.staticflickr.com/6/5011/5510599760_6668df5a8a_z.jpg',
-    steps: ['放入番茄', '打個蛋', '放入少許鹽巴', '用心快炒'],
+    name: '', 
+    description: '', 
+    imagePath: '',
+    steps: '',
     updatedAt: new Date()
   });
 
@@ -105,6 +105,12 @@ apiRoutes.get('/posts', (req, res) => {
   })
 });
 
+apiRoutes.get('/posts/:id', (req, res) => {
+  Post.findOne({ _id: req.params.id}, (err, posts) => {
+    res.status(200).json(posts);
+  })
+});
+
 // route middleware to verify a token
 apiRoutes.use((req, res, next) => {
   // check header or url parameters or post parameters for token
@@ -139,6 +145,8 @@ apiRoutes.get('/authenticate', (req, res) => {
     message: 'Enjoy your token!',
   });
 });
+
+
 // create post
 apiRoutes.post('/posts', (req, res) => {
   const newPost = new Post({

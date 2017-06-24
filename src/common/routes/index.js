@@ -11,5 +11,6 @@ export default (
     <IndexRoute component={HomePageContainer}/>
     <Route path="/login" component={CheckAuth(LoginPageContainer, 'guest')}/>
     <Route path="/share" component={CheckAuth(SharePageContainer, 'auth')}/>
+
   </Route>
 );

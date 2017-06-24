@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, FormGroup, Button, FormControl, ControlLabel } from 'react-bootstrap';
-
 const LoginBox = ({
   email,
   password,
@@ -8,7 +7,7 @@ const LoginBox = ({
   onChangePasswordInput,
   onLoginSubmit,
 }) => (
-  <div>
+  <div style = {{backgroundColor:"#ffffff"}}>
     <Form horizontal>
       <FormGroup
         controlId="formBasicText"
@@ -40,6 +39,7 @@ const LoginBox = ({
       >
         提交送出
       </Button>
+
     </Form>
   </div>
 );
