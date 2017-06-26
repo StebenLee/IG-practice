@@ -13,7 +13,7 @@ const PostBox = (props)  => {
     <Row >
       <Col xsOffset={1} xs={10}>
         <Thumbnail src={props.post.get('imagePath')} alt="480x270">
-          <h3>{props.post.get('name')}</h3>
+          <h3 style={{ textAlignVertical: "center", textAlign: "center" }}>{props.post.get('name')}</h3>
           <p>{props.post.get('description')}</p>
           <Col xsOffset={10}>
           {

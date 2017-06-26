@@ -50,14 +50,14 @@ apiRoutes.get('/setup', (req, res) => {
     admin: true 
   });
 
-  const samplePost = new Post({
+/*  const samplePost = new Post({
     id: '110ec58a-a0f2-4ac4-8393-c866d813b8d1',
     name: '', 
     description: '', 
     imagePath: '',
     steps: '',
     updatedAt: new Date()
-  });
+  });*/
 
   // save the sample user
   sampleUser.save((err) => {
@@ -73,19 +73,10 @@ apiRoutes.get('/setup', (req, res) => {
 apiRoutes.get('/setup2', (req, res) => {
   // create a sample user
   const sampleUser = new User({ 
-    username: 'mark88', 
-    email: 'mark88@demo.com', 
+    username: 'steben', 
+    email: '8888', 
     password: '12345',
     admin: true 
-  });
-
-  const samplePost = new Post({
-    id: '110ec58a-a0f2-4ac4-8393-c866d813b8d1',
-    name: '番茄炒蛋', 
-    description: '番茄炒蛋，一道非常經典的家常菜料理。雖然看似普通，但每個家庭都有屬於自己家裡的不同味道', 
-    imagePath: 'https://c1.staticflickr.com/6/5011/5510599760_6668df5a8a_z.jpg',
-    steps: ['放入番茄', '打個蛋', '放入少許鹽巴', '用心快炒'],
-    updatedAt: new Date()
   });
 
   // save the sample user
@@ -153,7 +144,7 @@ apiRoutes.post('/posts', (req, res) => {
     name: req.body.name, 
     description: req.body.description, 
     imagePath: req.body.imagePath,
-    steps: ['放入番茄', '打個蛋', '放入少許鹽巴', '用心快炒'],
+    steps: "",
     updatedAt: new Date()
   });
 
