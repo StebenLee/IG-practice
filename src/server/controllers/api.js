@@ -50,14 +50,14 @@ apiRoutes.get('/setup', (req, res) => {
     admin: true 
   });
 
-/*  const samplePost = new Post({
+  const samplePost = new Post({
     id: '110ec58a-a0f2-4ac4-8393-c866d813b8d1',
-    name: '', 
+    name: '花蓮縣立體育場', 
     description: '', 
-    imagePath: '',
+    imagePath: 'http://i.imgur.com/NCxvVmC.png',
     steps: '',
     updatedAt: new Date()
-  });*/
+  });
 
   // save the sample user
   sampleUser.save((err) => {

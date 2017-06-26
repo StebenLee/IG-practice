@@ -33,11 +33,10 @@ const LoginBox = ({
       </FormGroup>
       <Button 
         onClick={onLoginSubmit} 
-        bsStyle="success" 
+        style={{background:"#17a56f"}}
         bsSize="large" 
-        block
-      >
-        提交送出
+        block>
+        Submit
       </Button>
 
     </Form>

@@ -4,8 +4,7 @@ node_modules
 #bug
 npm-debug.log
 
-#config
-src/server/config/index.js
+
 
 #test coverage
 coverage

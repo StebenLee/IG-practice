@@ -22,6 +22,7 @@ const ShareBox = (props) => {
         <FormControl 
           componentClass="textarea" 
           placeholder="textarea" 
+          style={{height:"150"}}
           defaultValue={props.description}          
           onChange={props.onChangeDescriptionInput}
         />
@@ -41,11 +42,11 @@ const ShareBox = (props) => {
       </FormGroup>
       <Button 
         onClick={props.onPostSubmit} 
-        bsStyle="success" 
+        style={{background:"#1d94f7"}}
         bsSize="large" 
         block
       >
-        提交送出
+        送出
       </Button>
     </Form>
             
