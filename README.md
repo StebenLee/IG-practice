@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://nodejs.org/">
-    <img alt="Node.js" src="http://imgur.com/fL2nwgb.png" width="400"/>
+    <img alt="Node.js" src="http://imgur.com/fL2nwgb.png" width="600"/>
   </a>
 </p>  
   
-  **Front-end  
+**Front-end  
   Mainly using React-router, Redux and react-bootstrap to implement the UI, webpack is the frontend manager.  
     React - `15.6.1`  
     React-Router - `2.6.1`  
