@@ -8,7 +8,7 @@
 Mainly using React-router, Redux and react-bootstrap to implement the UI, webpack is the frontend manager.  
 React - `15.6.1`  
 React-Router - `2.6.1`  
-React-Bootstrao - `0.30.2`
+React-Bootstrao - `0.30.2`  
 Redux    - `3.5.2`  
 Webpack  - `1.13.1`  
     
