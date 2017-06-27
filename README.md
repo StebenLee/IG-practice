@@ -22,7 +22,11 @@ Node.js  - `4.13.4`
 Using Mocha, chai and istanbul to test the restfulapi.  
 Mocha    - `2.4.5`  
 Chai     - `3.5.0`  
-istanbul - `0.4.5` 
+istanbul - `0.4.5`  
+  
+## Others 
+JWT token  
+PM2 
 
 ## Start server   
 start a server on http://localhost:8000  
