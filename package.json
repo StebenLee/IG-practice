@@ -1,6 +1,6 @@
 {
-  "name": "react-router-redux-node-open-cook",
-  "version": "0.0.0",
+  "name": "plog-practice",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "pm2 start index.js",
