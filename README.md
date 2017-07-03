@@ -27,7 +27,7 @@ istanbul - `0.4.5`
   
 ## Others 
 JWT token  
-PM2 
+Server enviornment is aws-ec2 AMI, pm2 was used to maintain it.
 
 ## Start server   
 start a server on http://localhost:8000  
