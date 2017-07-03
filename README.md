@@ -1,5 +1,6 @@
 # Plog-practice  
-
+view the website  
+http://13.114.20.94:8000/
 <p align="center">
     <img alt="Node.js" src="http://imgur.com/fL2nwgb.png" width="800"/>
 </p>  
